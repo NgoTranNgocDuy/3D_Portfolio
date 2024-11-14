@@ -7,11 +7,49 @@
 * {
   scroll-behavior: smooth;
 }
-
+/* Navbar */
 body {
   background: #010103;
   font-family: 'General Sans', sans-serif;
 }
+.nav-item {
+  width: 60px;
+  height: 60px;
+  background-color: #010103;
+  overflow: hidden;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-item:hover {
+  width: 130px;
+  background-color: #010103;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  font-family: 'Alata', sans-serif;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #fff; /* Adjust the color as needed */
+}
+.nav-item:hover .nav-link span { display: inline-block; /* Show text when hovered */ margin-left: 8px; /* Add space between icon and text */ }
+.nav-link span { display: none; /* Hide text by default */ }
+.nav-link i {
+  width: 30px; /* Increased size */
+  height: 30px; /* Increased size */
+  text-align: center;
+  font-size: 1.4rem; /* Increased font size */
+  font-weight: bold; /* Make icons bold */
+}
+
 
 @layer utilities {
   .c-space {
@@ -195,3 +233,4 @@ body {
     transform: rotate(0deg);
   }
 }
+
