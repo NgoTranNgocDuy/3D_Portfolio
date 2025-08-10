@@ -7,6 +7,9 @@
 * {
   scroll-behavior: smooth;
 }
+html {
+  scroll-behavior: smooth;
+}
 /* Navbar */
 body {
   background: #010103;

@@ -79,8 +79,8 @@ const Contact = () => {
           </p>
 
           <form ref={formRef} onSubmit={handleSubmit} className="mt-12 flex flex-col space-y-7">
-            <label className="space-y-3">
-              <span className="field-label">Full Name</span>
+              <label htmlFor="name" className="space-y-3">
+                <span className="field-label">Full Name</span>
               <input
                 type="text"
                 name="name"
@@ -92,8 +92,8 @@ const Contact = () => {
               />
             </label>
 
-            <label className="space-y-3">
-              <span className="field-label">Email address</span>
+              <label htmlFor="email" className="space-y-3">
+                <span className="field-label">Email address</span>
               <input
                 type="email"
                 name="email"
@@ -105,8 +105,8 @@ const Contact = () => {
               />
             </label>
 
-            <label className="space-y-3">
-              <span className="field-label">Your message</span>
+              <label htmlFor="message" className="space-y-3">
+                <span className="field-label">Your message</span>
               <textarea
                 name="message"
                 value={form.message}

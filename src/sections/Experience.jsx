@@ -12,7 +12,7 @@ const WorkExperience = () => {
   return (
     <section className="c-space my-20" id="work">
       <div className="w-full text-white-600">
-        <p className="head-text">My Work Experience</p>
+  <p className="head-text text-3xl sm:text-4xl">My Work Experience</p>
 
         <div className="work-container">
           <div className="work-canvas">
@@ -46,11 +46,11 @@ const WorkExperience = () => {
                   </div>
 
                   <div className="sm:p-5 px-2.5 py-5">
-                    <p className="font-bold text-white-800">{item.name}</p>
-                    <p className="text-sm mb-5">
+                    <p className="font-bold text-white-800 text-lg sm:text-xl">{item.name}</p>
+                    <p className="text-base sm:text-lg mb-5">
                       {item.pos} -- <span>{item.duration}</span>
                     </p>
-                    <p className="group-hover:text-white transition-all ease-in-out duration-500">{item.title}</p>
+                    <p className="group-hover:text-white transition-all ease-in-out duration-500 text-base">{item.title}</p>
                   </div>
                 </div>
               ))}

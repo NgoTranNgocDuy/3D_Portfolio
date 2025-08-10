@@ -23,8 +23,8 @@ const About = () => {
             <img src="assets/grid1.png" alt="grid-1" className="w-full sm:h-[276px] h-fit object-contain" />
 
             <div>
-              <p className="grid-headtext">Hi, I’m Tran Ngoc Duy Ngo</p>
-              <p className="grid-subtext">
+                  <p className="grid-headtext text-3xl sm:text-4xl">Hi, I’m Tran Ngoc Duy Ngo</p>
+                  <p className="grid-subtext text-lg sm:text-xl">
                 With 2+ years of experience, I have honed my skills in frontend, backend, and databases development, creating dynamic
                 and responsive websites.
               </p>
@@ -37,8 +37,8 @@ const About = () => {
             <img src="assets/grid2.png" alt="grid-2" className="w-full sm:h-[276px] h-fit object-contain" />
 
             <div>
-              <p className="grid-headtext">Tech Stack</p>
-              <p className="grid-subtext">
+                  <p className="grid-headtext text-3xl sm:text-4xl">Tech Stack</p>
+                  <p className="grid-subtext text-lg sm:text-xl">
                 I specialize in a variety of languages, frameworks, and tools that allow me to build robust and scalable
                 applications
               </p>
@@ -74,8 +74,8 @@ const About = () => {
             <img src="assets/grid3.png" alt="grid-3" className="w-full sm:h-[266px] h-fit object-contain" />
 
             <div>
-              <p className="grid-headtext">My Passion for Coding</p>
-              <p className="grid-subtext">
+                <p className="grid-headtext text-3xl sm:text-4xl">Tech Stack</p>
+                <p className="grid-subtext text-lg sm:text-xl">
                 I love solving problems and building things through code. Programming isn&apos;t just my
                 profession—it&apos;s my passion. I enjoy exploring new technologies, and enhancing my skills.
               </p>
