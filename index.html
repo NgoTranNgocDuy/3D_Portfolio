@@ -1,19 +1,107 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
-    <!-- Add Font Awesome for icons -->
-    <link
-       rel="stylesheet"
-       href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
-     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Andrew Ngo is a software engineer building full-stack web applications and AI-powered product experiences.">
+  <meta name="theme-color" content="#0b1015">
+  <meta property="og:title" content="Andrew Ngo | Software Engineer">
+  <meta property="og:description" content="Full-stack software engineer working across web applications, AI integration, and research.">
+  <meta property="og:type" content="website">
+  <title>Andrew Ngo | Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="motion.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header" data-header>
+      <a class="brand" href="#home" aria-label="Andrew Ngo home"><span class="brand-mark">AN</span><span>Andrew Ngo</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span><span class="sr-only">Toggle navigation</span></button>
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <a class="nav-link is-active" href="#home">Home</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#experience">Experience</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#education">Education</a>
+        <a class="nav-link" href="#contact">Contact</a>
+        <a class="nav-resume" href="resume.pdf" download>Download resume <span>↓</span></a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero section-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="status-dot"></span> Software engineer · Melbourne, Australia</p>
+          <h1>Building useful software at the intersection of <em>web</em> and <em>AI.</em></h1>
+          <p class="hero-lede">I’m Andrew Ngo, a software engineer focused on full-stack applications, thoughtful user experiences, and AI-powered systems that solve practical problems.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">Explore my work <span>↓</span></a>
+            <a class="button button-quiet" href="resume.pdf" download>Download resume <span>↓</span></a>
+          </div>
+          <div class="hero-meta"><span>Monash University graduate</span><span class="meta-rule"></span><span>Ready for software engineering opportunities</span></div>
+        </div>
+        <div class="hero-visual reveal reveal-delay" aria-label="A technical profile summary">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="signal-card">
+            <div class="signal-top"><span class="mono-label">profile.signal</span><span class="signal-live">● live</span></div>
+            <div class="signal-name">full-stack<br><span>+ agentic AI</span></div>
+            <div class="signal-lines"><div><span>stack</span><b>React · Node · Next</b></div><div><span>focus</span><b>Product-minded systems</b></div><div><span>base</span><b>Melbourne / remote</b></div></div>
+          </div>
+          <div class="float-tag tag-one">01 / build</div><div class="float-tag tag-two">02 / learn</div><div class="float-tag tag-three">03 / ship</div>
+        </div>
+      </section>
+
+      <section class="proof-strip" aria-label="Professional focus areas">
+        <div><span class="proof-index">01</span><strong>Full-stack</strong><small>Web applications</small></div>
+        <div><span class="proof-index">02</span><strong>AI integration</strong><small>Practical intelligence</small></div>
+        <div><span class="proof-index">03</span><strong>Research</strong><small>Engineering with purpose</small></div>
+        <div><span class="proof-index">04</span><strong>Team delivery</strong><small>Agile collaboration</small></div>
+      </section>
+
+      <section id="about" class="content-section section-grid">
+        <div class="section-intro reveal"><span class="section-number">01</span><p class="eyebrow">A little context</p><h2>Engineer with a bias toward <em>useful.</em></h2></div>
+        <div class="about-copy reveal reveal-delay"><p>My work sits between product thinking and implementation. I build interfaces and services that make complicated workflows feel clear, from internal web applications to voice-driven data collection experiences.</p><p>Alongside software engineering, I’ve explored AI in requirement engineering and healthcare research. That mix keeps me curious about both sides of a system: how it works under the hood, and whether it genuinely helps the person using it.</p><div class="about-note"><span>Currently exploring</span><strong>Agentic AI · AI-assisted scheduling · resilient product systems</strong></div></div>
+      </section>
+
+      <section id="experience" class="content-section experience-section">
+        <div class="section-heading reveal"><div><span class="section-number">02</span><p class="eyebrow">Selected experience</p><h2>Where I’ve been <em>building.</em></h2></div><p class="section-aside">A growing practice across professional engineering, research, teaching, and student-led product work.</p></div>
+        <div class="timeline">
+          <article class="timeline-item reveal"><div class="timeline-date">Previous internship</div><div class="timeline-body"><h3>Software Engineer Intern <span>Three Thousands</span></h3><p>Contributed to the development and maintenance of internal web applications, collaborating with a cross-functional team to deliver features using React.js, Node.js, and PostgreSQL.</p><p>Improved database queries and application performance, and participated in code reviews, sprint planning, and Agile ceremonies.</p><div class="tech-list"><span>React.js</span><span>Node.js</span><span>PostgreSQL</span></div></div></article>
+          <article class="timeline-item reveal"><div class="timeline-date">Jan 2026 — Now</div><div class="timeline-body"><h3>Teaching Associate <span>Monash University</span></h3><p>Support 80+ students each semester through tutorials and lab sessions in Software Engineering and Programming. Mentor debugging strategies, algorithmic thinking, clean code, and software design.</p><p>Collaborate with lecturers to prepare materials, mark assignments, and provide feedback that helps students improve.</p><div class="tech-list"><span>Teaching</span><span>Software design</span><span>Mentoring</span></div></div></article>
+          <article class="timeline-item reveal"><div class="timeline-date">Oct 2025 — Jun 2026</div><div class="timeline-body"><h3>Graduate Research Assistant <span>Monash University</span></h3><p>Researched the integration of AI into requirement engineering applications, designing a smart medication reminder system for elderly users and authoring research documentation and requirement specifications.</p><div class="tech-list"><span>AI research</span><span>Requirements</span><span>Healthcare</span></div></div></article>
+          <article class="timeline-item compact reveal"><div class="timeline-date">2024 — 2025</div><div class="timeline-body"><h3>Web & AI Software Developer <span>InternBoot · Arimsys Pty Ltd · Monash Human Power</span></h3><p>Delivered full-stack and AI-driven product work across internships, contract work, and a student team, using Next.js, NestJS, MongoDB, AWS, Zustand, speech-to-text, and analytics platforms.</p><div class="tech-list"><span>Next.js</span><span>NestJS</span><span>AWS</span><span>Speech-to-text</span></div></div></article>
+        </div>
+      </section>
+
+      <section id="projects" class="content-section projects-section">
+        <div class="section-heading reveal"><div><span class="section-number">03</span><p class="eyebrow">Work that matters</p><h2>Selected <em>projects.</em></h2></div><p class="section-aside">A closer look at the problems I’ve worked on and the parts I owned.</p></div>
+        <div class="project-grid">
+          <article class="project-card project-feature reveal"><div class="project-art art-medication"><span class="art-label">research / 01</span><div class="medication-ui"><span class="ui-pill">Today · 08:00</span><strong>Medication reminder</strong><span class="ui-line"></span><span class="ui-line short"></span></div></div><div class="project-content"><p class="project-kicker">AI + requirements research</p><h3>Smart medication reminder</h3><p>Explored an AI-assisted system designed to help elderly users take the right medications at the right times based on prescriptions and health conditions.</p><div class="project-footer"><span>AI integration · Healthcare</span><span class="project-arrow">↗</span></div></div></article>
+          <article class="project-card reveal"><div class="project-art art-voice"><span class="art-label">product / 02</span><div class="voice-wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><span class="voice-caption">voice → structured data</span></div><div class="project-content"><p class="project-kicker">Contract software development</p><h3>Voice-driven data collection</h3><p>Developed AI-driven features for a SaaS platform, integrating speech-to-text and AI-powered form input to turn voice into structured data.</p><div class="project-footer"><span>Next.js · NestJS · MongoDB</span><span class="project-arrow">↗</span></div></div></article>
+          <article class="project-card reveal"><div class="project-art art-human"><span class="art-label">community / 03</span><div class="human-mark">MHP<span>↗</span></div><span class="human-caption">content · components · routing</span></div><div class="project-content"><p class="project-kicker">Student team website</p><h3>Monash Human Power</h3><p>Developed and maintained the official team website with Next.js, improving content structure, UI components, and page routing for stronger engagement.</p><div class="project-footer"><span>Next.js · Analytics</span><span class="project-arrow">↗</span></div></div></article>
+        </div>
+      </section>
+
+      <section id="skills" class="content-section skills-section section-grid">
+        <div class="section-intro reveal"><span class="section-number">04</span><p class="eyebrow">The toolkit</p><h2>Tools for turning ideas into <em>systems.</em></h2></div>
+        <div class="skills-groups reveal reveal-delay"><div class="skill-group"><h3>Languages</h3><p>Python · JavaScript · TypeScript · Java · C · C++ · SQL · HTML · CSS · Assembly</p></div><div class="skill-group"><h3>Frameworks & tools</h3><p>React.js · Next.js · Node.js · NestJS · Express.js · Tailwind CSS · Docker · AWS · PostgreSQL · MongoDB · REST APIs · Agile/Scrum</p></div><div class="skill-group"><h3>AI & research</h3><p>Agentic AI · NLP · Speech-to-text · Requirement engineering · AI-assisted scheduling</p></div></div>
+      </section>
+
+      <section id="education" class="content-section education-section">
+        <div class="section-heading reveal"><div><span class="section-number">05</span><p class="eyebrow">The foundation</p><h2>Education & <em>community.</em></h2></div></div>
+        <div class="education-grid"><div class="education-main reveal"><span class="edu-year">Graduated 2026</span><h3>Bachelor of Engineering Honours</h3><p class="edu-degree">Software Engineering · Monash University</p><p>Clayton, Victoria, Australia</p><span class="wam">WAM 79</span></div><div class="community-note reveal reveal-delay"><p class="eyebrow">Next chapter</p><h3>Graduated, curious, and ready to contribute.</h3><p>Now seeking software engineering opportunities where I can contribute across full-stack development, AI integration, and thoughtful product delivery.</p></div></div>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <div class="contact-inner reveal"><p class="eyebrow">Have a problem worth solving?</p><h2>Let’s make something <em>useful.</em></h2><p>I’ve graduated from Monash University and I’m ready to join a team working on meaningful software, full-stack products, or AI-enabled experiences.</p><div class="contact-actions"><a class="button button-primary" href="mailto:ngotnduy@gmail.com">ngotnduy@gmail.com <span>↗</span></a><a class="button button-outline" href="resume.pdf" download>Download resume <span>↓</span></a></div><div class="contact-links"><span>Melbourne, Australia</span><span>·</span><span>Available for opportunities</span></div></div>
+      </section>
+    </main>
+    <footer class="site-footer"><span>© 2026 Andrew Ngo</span><span>Software Engineer</span><a href="#home">Back to top ↑</a></footer>
+  </div>
+  <script src="script.js"></script>
+</body>
 </html>
